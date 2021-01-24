@@ -7,16 +7,16 @@ class LocationDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello'),
+        title: Text('Location Detail'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           ImageBanner("assets/images/kiyomizu-dera.jpg"),
-          TextSection(Colors.red),
-          TextSection(Colors.blue),
-          TextSection(Colors.green),
+          TextSection("Summary", "Something1"),
+          TextSection("Summary", "Something2"),
+          TextSection("Summary", "Something3"),
         ],
       ),
     );
