@@ -45,6 +45,7 @@ class App extends StatelessWidget {
           title: TitleTextStyle,
           // ignore: deprecated_member_use
           body1: Body1TextStyle,
+          caption: CaptionTextStyle,
         ));
   }
 }
