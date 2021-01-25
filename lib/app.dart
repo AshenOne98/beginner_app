@@ -46,6 +46,7 @@ class App extends StatelessWidget {
           // ignore: deprecated_member_use
           body1: Body1TextStyle,
           caption: CaptionTextStyle,
+          subtitle: SubTitleTextStyle,
         ));
   }
 }

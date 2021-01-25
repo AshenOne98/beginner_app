@@ -28,10 +28,8 @@ class LocationTile extends StatelessWidget {
               style:
                   Theme.of(context).textTheme.title.copyWith(color: textColor),
             ),
-            Text(
-              location.userItinerarySummary.toUpperCase(),
-              style: Theme.of(context).textTheme.subtitle,
-            ),
+            Text(location.userItinerarySummary.toUpperCase(),
+                style: Theme.of(context).textTheme.subtitle),
             Text(
               location.tourPackageName.toUpperCase(),
               style: Theme.of(context)

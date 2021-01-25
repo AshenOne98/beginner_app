@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:beginner_app/widgets/image_banner.dart';
 import 'text_section.dart';
 import 'package:beginner_app/models/location.dart';
+import '../../widgets/location_tile.dart';
 
 class LocationDetail extends StatelessWidget {
   final int _locationID;
@@ -18,12 +19,18 @@ class LocationDetail extends StatelessWidget {
       appBar: AppBar(
         title: Text(location.name),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          ImageBanner(assetPath: location.imagePath),
-        ]..addAll(textSections(location)),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            ImageBanner(assetPath: location.imagePath),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 5.0),
+              child: LocationTile(location: location),
+            )
+          ]..addAll(textSections(location)),
+        ),
       ),
     );
   }
