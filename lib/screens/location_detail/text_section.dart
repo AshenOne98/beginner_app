@@ -17,12 +17,14 @@ class TextSection extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(_hPad, 32.0, _hPad, 4.0),
             child: Text(
               _title,
+              // ignore: deprecated_member_use
               style: Theme.of(context).textTheme.title,
             )),
         Container(
             padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, 10.0),
             child: Text(
               _body,
+              // ignore: deprecated_member_use
               style: Theme.of(context).textTheme.body1,
             )),
       ],

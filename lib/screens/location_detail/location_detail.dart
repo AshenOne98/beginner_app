@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'image_banner.dart';
+import 'package:beginner_app/widgets/image_banner.dart';
 import 'text_section.dart';
 import 'package:beginner_app/models/location.dart';
 

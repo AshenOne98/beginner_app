@@ -41,7 +41,9 @@ class App extends StatelessWidget {
           textTheme: TextTheme(title: AppBarTextStyle),
         ),
         textTheme: TextTheme(
+          // ignore: deprecated_member_use
           title: TitleTextStyle,
+          // ignore: deprecated_member_use
           body1: Body1TextStyle,
         ));
   }
